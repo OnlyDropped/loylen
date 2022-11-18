@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top__inner">
+          <span class="header-top__delivery">Бесплатная доставка при заказе от 10 000 руб по Москве и Московской области</span>
+          <button class="header-top__close">
+            <img src="img/icons/close.svg" alt="кнопка закрыть">
+          </button>          
+        </div>
+
+      </div>
+    </div>
+    <nav class="header-nav">
+      <div class="container">
+        <div class="header-nav__inner">
+          <ul class="header-nav__menu">
+            <li>
+              <a href="">Каталог</a>
+            </li>
+            <li>
+              <a href="">lookbook</a>
+            </li>
+            <li>
+              <a href="">О бренде</a>
+            </li>
+            <li>
+              <a href="">информация</a>
+            </li>
+          </ul>
+          <a class="header-nav__logo" href="">
+            <img src="img/icons/logo.svg" alt="логотип">
+          </a>
+          <div class="header-nav__box">
+            <button class="header-nav__search">
+              <img src="img/icons/search.svg" alt="кнопка поиска">
+            </button>
+            <button class="header-nav__user">
+              <img src="img/icons/user.svg" alt="пользователь">
+            </button>
+            <button class="header-nav__favorites">
+              <img src="img/icons/favourites.svg" alt="избранное">
+            </button>
+            <button class="header-nav__cart">
+              <img src="img/icons/cart.svg" alt="корзина">
+              <span class="header-nav__count">12</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="home-banner">
+      <div class="home-banner__item" style="background: url('img/banner/1.png') center center no-repeat;">
+        <h1 class="home-banner__title">Осень 2021</h1>
+        <a class="home-banner__view" href="">Смотреть</a>
+      </div>
+      <div class="home-banner__item" style="background: url('img/banner/2.png') center center no-repeat;">
+        <p class="home-banner__heading">Новинки</p>
+        <a class="home-banner__view" href="">Смотреть</a>
+      </div>
+      <div class="home-banner__item" style="background: url('img/banner/3.png') center top no-repeat; background-size: cover;">
+        <p class="home-banner__heading">Распродажа</p>
+        <a class="home-banner__view" href="">Смотреть</a>
+      </div>
+    </section>
+    <section class="home-catalog">
+      <div class="container">
+        <h2 class="home-catalog__title title">Каталог</h2>
+        <div class="home-catalog__container">
+          <div class="home-catalog__card">
+            <div class="home-catalog__info" style="background: url('img/home-catalog/1.jpg') center center no-repeat;">
+              <button class="home-catalog__favorites">
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.21688 10.1999C0.0535382 7.26649 0.774652 2.86642 4.38022 1.39973C7.98579 -0.0669538 10.1491 2.86642 10.8702 4.33311C11.5914 2.86642 14.4758 -0.0669538 18.0814 1.39973C21.687 2.86642 21.687 7.26649 19.5236 10.1999C17.3603 13.1332 10.8702 19 10.8702 19C10.8702 19 4.38022 13.1332 2.21688 10.1999Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <form class="home-catalog__form" action="">
+                <div class="home-catalog__size">
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">40</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">42</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">44</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">46</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">48</div>
+                  </label>                   
+                </div>  
+                <a class="home-catalog__add-cart" href="">
+                  Добавить в корзину
+                </a>                                                             
+              </form>
+            </div>
+            <div class="home-catalog__body">
+              <div class="home-catalog__body-caption">
+                Бомбер
+              </div>
+              <div class="home-catalog__body-price">5 000 ₽</div>
+            </div>
+          </div>
+          <div class="home-catalog__card">
+            <div class="home-catalog__info" style="background: url('img/home-catalog/2.jpg') center center no-repeat;">
+              <button class="home-catalog__favorites">
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.21688 10.1999C0.0535382 7.26649 0.774652 2.86642 4.38022 1.39973C7.98579 -0.0669538 10.1491 2.86642 10.8702 4.33311C11.5914 2.86642 14.4758 -0.0669538 18.0814 1.39973C21.687 2.86642 21.687 7.26649 19.5236 10.1999C17.3603 13.1332 10.8702 19 10.8702 19C10.8702 19 4.38022 13.1332 2.21688 10.1999Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <form class="home-catalog__form" action="">
+                <div class="home-catalog__size">
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">40</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">42</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">44</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">46</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">48</div>
+                  </label>                   
+                </div>  
+                <a class="home-catalog__add-cart" href="">
+                  Добавить в корзину
+                </a>                                                             
+              </form>
+            </div>
+            <div class="home-catalog__body">
+              <div class="home-catalog__body-caption">
+                Кожаная куртка
+              </div>
+              <div class="home-catalog__body-price">12 000 ₽</div>
+            </div>
+          </div> 
+          <div class="home-catalog__card">
+            <div class="home-catalog__info" style="background: url('img/home-catalog/3.jpg') center center no-repeat;">
+              <button class="home-catalog__favorites">
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.21688 10.1999C0.0535382 7.26649 0.774652 2.86642 4.38022 1.39973C7.98579 -0.0669538 10.1491 2.86642 10.8702 4.33311C11.5914 2.86642 14.4758 -0.0669538 18.0814 1.39973C21.687 2.86642 21.687 7.26649 19.5236 10.1999C17.3603 13.1332 10.8702 19 10.8702 19C10.8702 19 4.38022 13.1332 2.21688 10.1999Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <form class="home-catalog__form" action="">
+                <div class="home-catalog__size">
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">40</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">42</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">44</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">46</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">48</div>
+                  </label>                   
+                </div>  
+                <a class="home-catalog__add-cart" href="">
+                  Добавить в корзину
+                </a>                                                             
+              </form>
+            </div>
+            <div class="home-catalog__body">
+              <div class="home-catalog__body-caption">
+                Тренч
+              </div>
+              <div class="home-catalog__body-price">4 000 ₽</div>
+            </div>
+          </div>
+          <div class="home-catalog__card">
+            <div class="home-catalog__info" style="background: url('img/home-catalog/4.jpg') center center no-repeat;">
+              <button class="home-catalog__favorites">
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.21688 10.1999C0.0535382 7.26649 0.774652 2.86642 4.38022 1.39973C7.98579 -0.0669538 10.1491 2.86642 10.8702 4.33311C11.5914 2.86642 14.4758 -0.0669538 18.0814 1.39973C21.687 2.86642 21.687 7.26649 19.5236 10.1999C17.3603 13.1332 10.8702 19 10.8702 19C10.8702 19 4.38022 13.1332 2.21688 10.1999Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <form class="home-catalog__form" action="">
+                <div class="home-catalog__size">
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">40</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">42</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">44</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">46</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">48</div>
+                  </label>                   
+                </div>  
+                <a class="home-catalog__add-cart" href="">
+                  Добавить в корзину
+                </a>                                                             
+              </form>
+            </div>
+            <div class="home-catalog__body">
+              <div class="home-catalog__body-caption">
+                Рубашка
+              </div>
+              <div class="home-catalog__body-price">4 000 ₽</div>
+            </div>
+          </div>   
+          <div class="home-catalog__card">
+            <div class="home-catalog__info" style="background: url('img/home-catalog/5.jpg') center center no-repeat;">
+              <button class="home-catalog__favorites">
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.21688 10.1999C0.0535382 7.26649 0.774652 2.86642 4.38022 1.39973C7.98579 -0.0669538 10.1491 2.86642 10.8702 4.33311C11.5914 2.86642 14.4758 -0.0669538 18.0814 1.39973C21.687 2.86642 21.687 7.26649 19.5236 10.1999C17.3603 13.1332 10.8702 19 10.8702 19C10.8702 19 4.38022 13.1332 2.21688 10.1999Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <form class="home-catalog__form" action="">
+                <div class="home-catalog__size">
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">40</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">42</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">44</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">46</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">48</div>
+                  </label>                   
+                </div>  
+                <a class="home-catalog__add-cart" href="">
+                  Добавить в корзину
+                </a>                                                             
+              </form>
+            </div>
+            <div class="home-catalog__body">
+              <div class="home-catalog__body-caption">
+                Платье
+              </div>
+              <div class="home-catalog__body-price">4 000 ₽</div>
+            </div>
+          </div>   
+          <div class="home-catalog__card">
+            <div class="home-catalog__info" style="background: url('img/home-catalog/6.jpg') center center no-repeat;">
+              <button class="home-catalog__favorites">
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.21688 10.1999C0.0535382 7.26649 0.774652 2.86642 4.38022 1.39973C7.98579 -0.0669538 10.1491 2.86642 10.8702 4.33311C11.5914 2.86642 14.4758 -0.0669538 18.0814 1.39973C21.687 2.86642 21.687 7.26649 19.5236 10.1999C17.3603 13.1332 10.8702 19 10.8702 19C10.8702 19 4.38022 13.1332 2.21688 10.1999Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <form class="home-catalog__form" action="">
+                <div class="home-catalog__size">
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">40</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">42</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">44</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">46</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">48</div>
+                  </label>                   
+                </div>  
+                <a class="home-catalog__add-cart" href="">
+                  Добавить в корзину
+                </a>                                                             
+              </form>
+            </div>
+            <div class="home-catalog__body">
+              <div class="home-catalog__body-caption">
+                Домашний комлект
+              </div>
+              <div class="home-catalog__body-price">4 000 ₽</div>
+            </div>
+          </div>    
+          <div class="home-catalog__card">
+            <div class="home-catalog__info" style="background: url('img/home-catalog/7.jpg') center center no-repeat;">
+              <button class="home-catalog__favorites">
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.21688 10.1999C0.0535382 7.26649 0.774652 2.86642 4.38022 1.39973C7.98579 -0.0669538 10.1491 2.86642 10.8702 4.33311C11.5914 2.86642 14.4758 -0.0669538 18.0814 1.39973C21.687 2.86642 21.687 7.26649 19.5236 10.1999C17.3603 13.1332 10.8702 19 10.8702 19C10.8702 19 4.38022 13.1332 2.21688 10.1999Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <form class="home-catalog__form" action="">
+                <div class="home-catalog__size">
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">40</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">42</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">44</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">46</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">48</div>
+                  </label>                   
+                </div>  
+                <a class="home-catalog__add-cart" href="">
+                  Добавить в корзину
+                </a>                                                             
+              </form>
+            </div>
+            <div class="home-catalog__body">
+              <div class="home-catalog__body-caption">
+                Базовая водолазка
+              </div>
+              <div class="home-catalog__body-price">3 000 ₽</div>
+            </div>
+          </div>  
+          <div class="home-catalog__card">
+            <div class="home-catalog__info" style="background: url('img/home-catalog/8.jpg') center center no-repeat;">
+              <button class="home-catalog__favorites">
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.21688 10.1999C0.0535382 7.26649 0.774652 2.86642 4.38022 1.39973C7.98579 -0.0669538 10.1491 2.86642 10.8702 4.33311C11.5914 2.86642 14.4758 -0.0669538 18.0814 1.39973C21.687 2.86642 21.687 7.26649 19.5236 10.1999C17.3603 13.1332 10.8702 19 10.8702 19C10.8702 19 4.38022 13.1332 2.21688 10.1999Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <form class="home-catalog__form" action="">
+                <div class="home-catalog__size">
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">40</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">42</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">44</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">46</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">48</div>
+                  </label>                   
+                </div>  
+                <a class="home-catalog__add-cart" href="">
+                  Добавить в корзину
+                </a>                                                             
+              </form>
+            </div>
+            <div class="home-catalog__body">
+              <div class="home-catalog__body-caption">
+                Базовая футболка
+              </div>
+              <div class="home-catalog__body-price">2 000 ₽</div>
+            </div>
+          </div>      
+          <div class="home-catalog__card">
+            <div class="home-catalog__info" style="background: url('img/home-catalog/3.jpg') center center no-repeat;">
+              <button class="home-catalog__favorites">
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.21688 10.1999C0.0535382 7.26649 0.774652 2.86642 4.38022 1.39973C7.98579 -0.0669538 10.1491 2.86642 10.8702 4.33311C11.5914 2.86642 14.4758 -0.0669538 18.0814 1.39973C21.687 2.86642 21.687 7.26649 19.5236 10.1999C17.3603 13.1332 10.8702 19 10.8702 19C10.8702 19 4.38022 13.1332 2.21688 10.1999Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <form class="home-catalog__form" action="">
+                <div class="home-catalog__size">
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">40</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">42</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">44</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">46</div>
+                 </label>
+                  <label class="home-catalog__label">
+                    <input class="home-catalog__input" type="checkbox">
+                    <div class="home-catalog__checkbox">48</div>
+                  </label>                   
+                </div>  
+                <a class="home-catalog__add-cart" href="">
+                  Добавить в корзину
+                </a>                                                             
+              </form>
+            </div>
+            <div class="home-catalog__body">
+              <div class="home-catalog__body-caption">
+                Классические брюки
+              </div>
+              <div class="home-catalog__body-price">4 000 ₽</div>
+            </div>
+          </div>                                          
+        </div>
+        <a class="home-catalog__view" href="">Посмотреть всё</a>
+      </div>
+    </section>
+    <div class="wrapper">
+      <section class="lookbook">
+        <div class="lookbook__content">
+          <div class="lookbook__container">
+            <div class="lookbook__body">
+              <h1 class="lookbook__title">
+                LOOKBOOK
+              </h1>
+              <div class="lookbook__description"> 
+                <p class="lookbook__text">При создании коллекций мы учитываем, чтобы все изделия сочетались. Это позволяет подобрать полный образ на все случаи жизни. 
+                При создании коллекций мы учитываем, чтобы все изделия сочетались. Это позволяет подобрать полный образ на все случаи жизни. </p>
+                <p class="lookbook__text">Скидка 10% при покупке полного образа</p>
+              </div>
+                <a class="lookbook__view" href="">Смотреть</a>              
+            </div>
+          </div>
+        </div>
+        <div class="lookbook__image">
+          <img src="img/lookbook.jpg" alt="">
+        </div>
+      </section>
+    </div>
+
+    <section class="our-instagram">
+      <h3 class="our-instagram__title title">Наш Инстаграм</h3>
+      <h4 class="our-instagram__user-name">@loylen_brand</h4>
+      <div class="our-instagram__content">
+        <div class="our-instagram__card">
+          <img class="our-instagram__img" src="img/intagram/1.jpg" alt="">
+          <a class="our-instagram__slogan" href="">Перейти в инcтаграм</a>
+        </div>
+        <div class="our-instagram__card">
+          <img class="our-instagram__img" src="img/intagram/2.jpg" alt="">
+          <a class="our-instagram__slogan" href="">Перейти в инcтаграм</a>
+        </div>
+        <div class="our-instagram__card">
+          <img class="our-instagram__img" src="img/intagram/3.jpg" alt="">
+          <a class="our-instagram__slogan" href="">Перейти в инcтаграм</a>
+        </div>
+        <div class="our-instagram__card">
+          <img class="our-instagram__img" src="img/intagram/4.jpg" alt="">
+          <a class="our-instagram__slogan" href="">Перейти в инcтаграм</a>
+        </div>                        
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__info">
+          <a class="footer__logo" href="">
+            <img src="img/icons/logo.svg" alt="логотип">
+          </a>
+          <p class="footer__slogan">Нужна помощь с заказом?</p>
+          <a class="footer__phone" href="tel:+79647059464">+ 7 964 705 94 64</a>
+          <a class="footer__email" href="mailto:info@loylen.com">info@loylen.com</a>
+          <ul class="footer__information">
+            <li>2021 Интернет-магазин LOYLEN</li>
+            <li>Все права защищены</li>
+            <li><a href="">Разработка дизайна</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <form class="footer__form" action="">
+            <p class="footer__text">Подпишитесь на рассылку и первыми получайте информацию о новинках, скидках и специальных предложениях</p>
+            <label class="footer__label">
+              <input class="footer__input" type="email" placeholder="Введите ваш E-mail">
+              <button class="footer__subscribe" type="submit">Подписаться</button>
+            </label>
+          </form>
+          <div class="footer__item">
+            <p class="footer__title">Каталог</p>
+            <ul class="footer__list">
+              <li><a href="">Новинки</a></li>
+              <li><a href="">Распродажа</a></li>
+              <li><a href="">Готовые образы</a></li>
+              <li><a href="">Все товары</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <p class="footer__title">Покупателям</p>
+            <ul class="footer__list">
+              <li><a href="">Личный кабинет</a></li>
+              <li><a href="">Таблица размеров</a></li>
+              <li><a href="">Доставка и оплата</a></li>
+              <li><a href="">Возврат</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <p class="footer__title">О нас</p>
+            <ul class="footer__list">
+              <li><a href="">О бренде</a></li>
+              <li><a href="">Контакты</a></li>
+              <li><a href="">Оферта</a></li>
+              <li><a href="">Политика конфиденциальности</a></li>
+            </ul>
+          </div>                    
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

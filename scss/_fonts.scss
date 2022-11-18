@@ -1,0 +1,29 @@
+@font-face{
+  font-family: 'Futura';
+  font-weight: 400;
+  font-style: normal;
+  src: local('FuturaPT-Book'),
+       url('../fonts/FuturaPT-Book.woff2') format("woff2"),
+       url('../fonts/FuturaPT-Book.woff') format("woff");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Lovelace';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Lovelace-Regular'),
+       url('../fonts/Lovelace-Regular.woff2') format("woff2"),
+       url('../fonts/Lovelace-Regular.woff') format("woff");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Lovelace';
+  font-weight: 500;
+  font-style: normal;
+  src: local('Lovelace-Medium'),
+       url('../fonts/Lovelace-Medium.woff2') format("woff2"),
+       url('../fonts/Lovelace-Medium.woff') format("woff");
+  font-display: swap;
+}
