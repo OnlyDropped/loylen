@@ -44,3 +44,14 @@ button {
   color: #474a51;
   margin-bottom: 80px;
 }
+
+.button {
+  padding: 15px 35px;
+  border: 1px solid #474a51;
+  @extend %future-400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #474a51;
+}
