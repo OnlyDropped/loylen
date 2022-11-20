@@ -176,8 +176,8 @@
     background: #fff;
     border: 1px solid #474a51;
   }
-  &__sale{
-    background: #EB5757;
+  &__sale {
+    background: #eb5757;
     color: #fff;
   }
   &__form {
@@ -243,18 +243,18 @@
     justify-content: center;
     gap: 0 8px;
   }
-  &__old-price{
-    color: #9F9D9D;
+  &__old-price {
+    color: #9f9d9d;
     position: relative;
-    &:before{
+    &:before {
       position: absolute;
-      content: '';
+      content: "";
       left: 0;
       right: 0;
       top: 50%;
       transform: translateY(-50%);
       height: 1px;
-      background: #9F9D9D;
+      background: #9f9d9d;
     }
   }
   &__view {
@@ -404,6 +404,301 @@
     z-index: 2;
     transition: 1s ease-in;
   }
+}
+.catalog {
+  padding: 50px 0 100px;
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(100px, 298px) minmax(100px, 952px);
+    gap: 40px 30px;
+  }
+  &__heading {
+    margin-bottom: 26px;
+  }
+}
+.catalog-top {
+  max-width: 100%;
+  width: 100%;
+  grid-column: 1 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__sort {
+    margin-left: auto;
+    font-size: 16px;
+  }
+}
+.dropdown {
+  position: relative;
+  max-width: 188px;
+  width: 100%;
+  height: 30px;
+  margin-left: 29px;
+}
+.dropdown::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  background: #555;
+  z-index: 10;
+  right: 28px;
+  top: 25px;
+  top: 50%;
+  transform: translateY(-50%) rotate(40deg);
+  transition: 0.5s;
+}
+
+.dropdown::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  background: #555;
+  z-index: 10;
+  right: 20px;
+  top: 25px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-40deg);
+  transition: 0.5s;
+}
+
+.dropdown.active::before {
+  right: 20px;
+}
+
+.dropdown.active::after {
+  right: 28px;
+}
+
+.dropdown input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 0px;
+  outline: none;
+  font-weight: 400;
+  padding: 6px 15px;
+  background: #fff;
+  border: 1px solid #eee;
+  font-size: 14px;
+  line-height: 130%;
+  color: #474a51;
+}
+
+.dropdown .option {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  top: 45px;
+  border-radius: 10px;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  z-index: 10;
+}
+
+.dropdown .option div {
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.dropdown .option div:hover {
+  background: #62baea;
+  color: #fff;
+}
+
+.dropdown.active .option {
+  opacity: 1;
+  visibility: visible;
+}
+.catalog-filter {
+  max-width: 298px;
+  width: 100%;
+  height: fit-content;
+  &__heading {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    & + .catalog-filter__heading {
+      margin-top: 10px;
+    }
+  }
+  &__form {
+    margin-top: 40px;
+    max-width: 100%;
+    width: 100%;
+  }
+  &__item {
+    width: 100%;
+    & + .catalog-filter__item {
+      margin-top: 50px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    line-height: 130%;
+    width: fit-content;
+    cursor: pointer;
+    & + .catalog-filter__label {
+      margin-top: 11px;
+    }
+  }
+  &__input {
+    appearance: none;
+    position: absolute;
+  }
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid #474a51;
+    margin-right: 20px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: #285da1;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  &__input:checked + .catalog-filter__checkbox::before {
+    opacity: 1;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    input {
+      width: 70px;
+      border: 1px solid #eee;
+      padding: 6px 10px;
+      &::placeholder {
+        font-size: 14px;
+        color: #9f9d9d;
+      }
+    }
+    span {
+      font-size: 16px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+  }
+  &__reset {
+    background: #9f9d9d;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 50px;
+    border: none;
+  }
+}
+.catalog-content {
+  max-width: 952px;
+  width: 100%;
+  &__product {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 297px));
+    width: 100%;
+    gap: 50px 30px;
+    margin-bottom: 80px;
+    .home-catalog__card {
+      max-width: 297px;
+      min-height: 497px;
+    }
+    .home-catalog__info {
+      min-height: 420px;
+    }
+  }
+  &__view {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+.card-breadcrumbs{
+  padding: 30px 0 15px;
+}
+.card {
+  padding: 15px 0 80px;
+  &__inner{
+      display: flex;
+  justify-content: space-between;
+  }
+}
+
+.card-slider {
+  max-width: 625px;
+  width: 100%;
+  min-height: 610px;
+  display: flex;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(50px, 188px) minmax(50px, 407px);
+  gap: 0 30px;
+  overflow: hidden;
+  &__thumb {
+    max-width: 188px;
+    width: 100%;
+    height: 610px;
+  }
+  &__thumb-card + .card-slider__thumb-card {
+    margin-top: 30px;
+  }
+  .slick-vertical .slick-slide {
+    border: none;
+  }
+  &__thumb-card,
+  &__thumb-item {
+    max-width: 188px;
+    width: 100%;
+    min-height: 290px;
+  }
+  &__thumb-item {
+    img {
+      width: 188px;
+      height: 290px;
+      object-fit: cover;
+    }
+  }
+  &__big {
+    max-width: 407px;
+    width: 100%;
+    min-height: 100%;
+  }
+  &__big-item,
+  &__big-card {
+    max-width: 407px;
+    width: 100%;
+    min-height: 100%;
+  }
+  &__big-item {
+    img {
+      width: 407px;
+      height: 610px;
+      object-fit: cover;
+    }
+  }
+}
+.card-info{
+  max-width: 625px;
+  width: 100%;
 }
 .footer {
   padding: 120px 0 150px;

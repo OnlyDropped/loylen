@@ -55,3 +55,38 @@ button {
   text-transform: uppercase;
   color: #474a51;
 }
+
+.heading {
+  @extend %lovelace-400;
+  font-size: 52px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.breadcrumbs {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+  }
+  &__item {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "/";
+      right: -10px;
+      top: 1px;
+      @extend %manrope-400;
+      font-size: 16px;
+    }
+    &:last-child:after{
+      content: none;
+    }
+  }
+  &__link {
+    font-size: 16px;
+  }
+  &__link--last {
+    text-transform: uppercase;
+  }
+}
