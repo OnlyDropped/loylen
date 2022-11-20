@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   background: linear-gradient(0deg, rgba(221, 6, 238, 1) 0%, rgba(24, 92, 237, 1) 100%);
   a {
     font-size: 34px;
@@ -888,6 +889,51 @@
     align-items: center;
     font-size: 16px;
     gap: 0 5px;
+  }
+}
+.lookbook-brands {
+  .lookbook__title {
+    max-width: 437px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}
+.lookbook-for {
+  flex-direction: row-reverse;
+  .lookbook__image {
+    transform: translate(100%, 0%);
+  }
+  .lookbook__body {
+    margin-left: auto;
+  }
+  .lookbook__title {
+    text-transform: uppercase;
+  }
+  .lookbook__container {
+    background: #fff;
+  }
+}
+.error-404 {
+  padding: 160px 0;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    margin-bottom: 80px;
+  }
+  &__text {
+    font-size: 24px;
+    & + .error-404__text{
+      margin-top: 2px;
+    }
+  }
+  &__back{
+    background: #DDE8F6;
+    border: none;
+    margin-top: 50px;
   }
 }
 .footer {
