@@ -29,7 +29,7 @@
   font-style: normal;
 }
 
-.heading, .home-banner__title, .lookbook__title {
+.heading, .home-banner__title, .lookbook__title, .card-info__name, .lookbook-page__title {
   font-family: "Lovelace", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1080,6 +1080,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 0 30px;
 }
 
 .card-slider {
@@ -1149,6 +1150,284 @@ button {
 .card-info {
   max-width: 625px;
   width: 100%;
+}
+
+.card-info__subtitle, .card-info__table {
+  font-size: 16px;
+  color: #9f9d9d;
+  margin-bottom: 20px;
+}
+
+.card-info__table {
+  margin-bottom: 30px;
+}
+
+.card-info__name {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.card-info__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 10px;
+  margin-bottom: 5px;
+}
+
+.card-info__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.card-info__checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.card-info__check {
+  width: 36px;
+  height: 30px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.card-info__checkbox:checked + .card-info__check {
+  color: #fff;
+  background: #285da1;
+}
+
+.card-info__checkbox:disabled + .card-info__check {
+  color: #9f9d9d;
+}
+
+.card-info__price {
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.card-info__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 20px;
+  margin-bottom: 30px;
+}
+
+.card-info__add-cart {
+  background: #dde8f6;
+  border: none;
+}
+
+.card-info__list + .card-info__list {
+  margin-top: 10px;
+}
+
+.card-info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px 0;
+}
+
+.card-info__item {
+  font-size: 16px;
+  color: #9f9d9d;
+}
+
+.card-info__colors {
+  margin-bottom: 30px;
+}
+
+.card-info__colors .card-info__check {
+  width: 53px;
+  height: 53px;
+  border: 4px solid rgba(221, 232, 246, 0);
+  overflow: hidden;
+}
+
+.card-info__colors .card-info__check img {
+  width: 53px;
+  height: 53px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-info__colors .card-info__checkbox:checked + .card-info__check {
+  border: 4px solid #285da1;
+  border-radius: 2px;
+}
+
+.card-like {
+  padding: 80px 0;
+}
+
+.card-like__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(50px, 298px))[4];
+      grid-template-columns: repeat(4, minmax(50px, 298px));
+  gap: 0 30px;
+}
+
+.card-like__content .home-catalog__card {
+  min-height: 497px;
+}
+
+.card-like__content .home-catalog__info {
+  min-height: 419px;
+}
+
+.lookbook-page {
+  padding-bottom: 80px;
+}
+
+.lookbook-page__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(100px, 476px) minmax(100px, 685px) minmax(100px, 298px) minmax(100px, 516px) minmax(100px, 410px) minmax(100px, 625px) minmax(100px, 298px);
+      grid-template-columns: minmax(100px, 476px) minmax(100px, 685px) minmax(100px, 298px) minmax(100px, 516px) minmax(100px, 410px) minmax(100px, 625px) minmax(100px, 298px);
+  gap: 80px 0;
+}
+
+.lookbook-page__text {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.lookbook-page__title {
+  font-size: 52px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.lookbook-page__subtitle {
+  font-size: 16px;
+}
+
+.lookbook-page__item img {
+  margin-bottom: 15px;
+}
+
+.lookbook-page__item:nth-child(1) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  justify-self: baseline;
+  margin-top: 100px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.lookbook-page__item:nth-child(2) {
+  justify-self: baseline;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+}
+
+.lookbook-page__item:nth-child(3) {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 8;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.lookbook-page__item:nth-child(4) {
+  justify-self: baseline;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+}
+
+.lookbook-page__item:nth-child(5) {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+}
+
+.lookbook-page__item:nth-child(6) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5 / 8;
+}
+
+.lookbook-page__item:nth-child(7) {
+  justify-self: baseline;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5 / 6;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+}
+
+.lookbook-page__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  gap: 0 5px;
 }
 
 .footer {

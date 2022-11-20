@@ -14,7 +14,7 @@ $('.card-slider__thumb').slick({
   vertical: true,
   arrows: false,
   focusOnSelect: true,
-  speed: 1500,
+  speed: 1000,
   cssEase: 'linear'
 });
 
