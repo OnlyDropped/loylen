@@ -437,11 +437,21 @@ button {
   -ms-grid-column-span: 2;
   grid-column: 1 / 3;
   padding-bottom: 141px;
+  background: url("../img/banner/1.png") center center no-repeat;
 }
 
 .home-banner__item:nth-child(1) .home-banner__view {
   color: #474a51;
   background: #dde8f6;
+}
+
+.home-banner__item:nth-child(2) {
+  background: url("../img/banner/2.png") center center no-repeat;
+}
+
+.home-banner__item:nth-child(3) {
+  background: url("../img/banner/3.png") center top no-repeat;
+  background-size: cover;
 }
 
 .home-banner__title, .home-banner__heading, .home-banner__view {
@@ -774,6 +784,7 @@ button {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 80px;
+  font-size: calc(24px + 28 * (100vw / 1400));
 }
 
 .our-instagram__content {
@@ -1864,6 +1875,187 @@ button {
   }
   .header-nav__cart {
     display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .our-instagram {
+    background: plum;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-catalog {
+    padding: 80px 0;
+  }
+  .home-catalog__title {
+    margin-bottom: 40px;
+  }
+  .home-catalog__info {
+    min-height: 450px;
+    background-size: cover;
+  }
+  .home-catalog__card {
+    min-height: 527px;
+  }
+  .home-catalog__container {
+    margin-bottom: 40px;
+  }
+  .our-instagram {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .our-instagram {
+    padding-top: 60px;
+  }
+  .our-instagram__user-name {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 820px) {
+  .home-banner {
+    -ms-grid-rows: minmax(100px, 400px) minmax(100px, 400px);
+        grid-template-rows: minmax(100px, 400px) minmax(100px, 400px);
+  }
+  .home-banner__item:nth-child(1) {
+    padding-bottom: 85px;
+    background-position-y: inherit;
+  }
+  .home-banner__item:nth-child(2) {
+    background-position-y: inherit;
+  }
+  .home-catalog {
+    padding: 60px 0;
+  }
+  .our-instagram__content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(100px, 600px))[2];
+        grid-template-columns: repeat(2, minmax(100px, 600px));
+  }
+  .our-instagram__card {
+    max-width: 100%;
+  }
+  .our-instagram__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-catalog__container {
+    gap: 35px 25px;
+  }
+  .home-catalog__info {
+    min-height: 400px;
+    background-size: cover;
+  }
+  .home-catalog__card {
+    min-height: 477px;
+  }
+  .lookbook__title {
+    font-size: 40px;
+  }
+  .lookbook__body {
+    padding: 50px 20px 50px 20px;
+  }
+  .our-instagram {
+    font-size: calc(24px + (26 + 12 * 0.7) * ((100vw - 320px) / 1400));
+  }
+}
+
+@media (max-width: 425px) {
+  .home-banner__heading {
+    font-size: 22px;
+  }
+  .home-banner__view {
+    padding: 12px 28px;
+  }
+  .home-catalog {
+    padding: 40px 0;
+  }
+  .home-catalog__container {
+    -ms-grid-columns: (minmax(100px, 407px))[2];
+        grid-template-columns: repeat(2, minmax(100px, 407px));
+    gap: 45px 10px;
+  }
+  .home-catalog__card {
+    min-height: 352px;
+  }
+  .home-catalog__body {
+    padding-top: 10px;
+  }
+  .home-catalog__info {
+    min-height: 275px;
+    background-size: cover;
+  }
+  .home-catalog__form {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    padding: 6px 0 6px;
+  }
+  .home-catalog__size {
+    gap: 0px 10px;
+  }
+  .home-catalog__checkbox {
+    font-size: 13px;
+    width: 20px;
+    height: 20px;
+  }
+  .home-catalog__info:hover .home-catalog__form {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+  }
+  .home-catalog__view {
+    padding: 10px 25px;
+  }
+  .lookbook__body {
+    width: 100%;
+    padding: 35px 20px 35px 20px;
+  }
+  .lookbook__description {
+    margin-bottom: 25px;
+  }
+  .our-instagram__card {
+    min-height: 250px;
+  }
+  .our-instagram__img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .home-catalog__container {
+    gap: 25px 10px;
+  }
+  .home-catalog__span {
+    padding: 5px 8px;
+  }
+  .home-catalog__body-caption {
+    font-size: 20px;
+  }
+  .lookbook__body {
+    padding: 25px 0 35px 0px;
+  }
+  .our-instagram__card {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  .home-banner__title {
+    font-size: 36px;
+  }
+  .home-banner__view {
+    padding: 10px 20px;
+  }
+  .home-catalog__span {
+    font-size: 12px;
+  }
+  .home-catalog__size {
+    gap: 0px 5px;
   }
 }
 
