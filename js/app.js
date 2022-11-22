@@ -1,4 +1,10 @@
- $('.card-slider__big').slick({
+const btn = document.querySelector('.header-nav__btn');
+const menu = document.querySelector('.header-nav__menu')
+btn.addEventListener('click', () => {
+  btn.classList.toggle('header-nav__btn--active');
+  menu.classList.toggle('header-nav__menu--active');
+})
+$('.card-slider__big').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
@@ -38,6 +44,8 @@ const link = document.querySelector('.home-banner__view')
 link.addEventListener('click', function name(e) {
   e.preventDefault();
 })
+
+
 
 
 
