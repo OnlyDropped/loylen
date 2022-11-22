@@ -883,6 +883,41 @@ button {
   font-size: 16px;
 }
 
+.catalog-top__menu {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 12px;
+  display: none;
+}
+
+.catalog-top__menu span {
+  position: absolute;
+  background: #474a51;
+  left: 0;
+  height: 4px;
+  top: 4px;
+}
+
+.catalog-top__menu span:nth-child(1) {
+  width: 14px;
+}
+
+.catalog-top__menu span:nth-child(2) {
+  left: 0;
+  top: 50%;
+  width: 22px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.catalog-top__menu span:nth-child(3) {
+  width: 100%;
+  bottom: 4px;
+  margin-top: auto;
+}
+
 .dropdown {
   position: relative;
   max-width: 188px;
@@ -1812,6 +1847,7 @@ button {
             transform: scale(0);
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
+    z-index: 15;
   }
   .header-nav__menu li {
     -webkit-transition: 0.6s ease-out;
@@ -1848,6 +1884,7 @@ button {
   .header-nav__btn {
     display: block;
     margin-left: 12px;
+    z-index: 16;
   }
 }
 
@@ -1875,12 +1912,6 @@ button {
   }
   .header-nav__cart {
     display: none;
-  }
-}
-
-@media (max-width: 1440px) {
-  .our-instagram {
-    background: plum;
   }
 }
 
@@ -2056,6 +2087,46 @@ button {
   }
   .home-catalog__size {
     gap: 0px 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .catalog {
+    padding: 50px 0;
+  }
+  .catalog-filter {
+    display: none;
+  }
+  .catalog-content {
+    max-width: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
+}
+
+@media (max-width: 425px) {
+  .catalog__heading {
+    font-size: 46px;
+  }
+  .catalog .dropdown {
+    max-width: 188px;
+    margin-left: 40px;
+  }
+  .catalog-top__sort {
+    display: none;
+  }
+  .catalog-content__product {
+    -ms-grid-columns: (minmax(100px, 297px))[2];
+        grid-template-columns: repeat(2, minmax(100px, 297px));
+    margin-bottom: 40px;
+    gap: 20px 15px;
+  }
+  .catalog-content__product .home-catalog__info {
+    min-height: 250px;
+  }
+  .catalog-content__product .home-catalog__card {
+    min-height: 317px;
   }
 }
 

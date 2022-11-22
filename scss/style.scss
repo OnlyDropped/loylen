@@ -495,6 +495,36 @@
     margin-left: auto;
     font-size: 16px;
   }
+  &__menu {
+    width: 30px;
+    height: 30px;
+    // background: palevioletred;
+    position: relative;
+    cursor: pointer;
+    margin-right: 12px;
+    display: none;
+    span {
+      position: absolute;
+      background: #474a51;
+      left: 0;
+      height: 4px;
+      top: 4px;
+    }
+    span:nth-child(1) {
+      width: 14px;
+    }
+    span:nth-child(2) {
+      left: 0;
+      top: 50%;
+      width: 22px;
+      transform: translateY(-50%);
+    }
+    span:nth-child(3) {
+      width: 100%;
+      bottom: 4px;
+      margin-top: auto;
+    }
+  }
 }
 .dropdown {
   position: relative;
@@ -1126,4 +1156,5 @@
 }
 @import "header";
 @import "home";
+@import "catalog";
 @import "footer";
