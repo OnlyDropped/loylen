@@ -59,6 +59,7 @@ button {
 .heading {
   @extend %lovelace-400;
   font-size: 52px;
+  font-size: calc(36px + 16 * (100vw / 1400));
   text-align: center;
   text-transform: uppercase;
 }

@@ -1020,6 +1020,8 @@
   }
   &__title {
     margin-bottom: 80px;
+    font-size: calc(36px + 16 * (100vw / 1400));
+    // font-size: calc(минимальное значение шрифта в пикселях + добавочное значение без пикселей * (100vw / ширина макета));
   }
   &__text {
     font-size: 24px;
@@ -1158,4 +1160,8 @@
 @import "home";
 @import "catalog";
 @import "card";
+
+@import "brands";
+@import "error";
+@import "contacts";
 @import "footer";
