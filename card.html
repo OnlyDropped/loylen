@@ -45,6 +45,12 @@
               <span class="header-nav__count">12</span>
             </button>
           </div>
+          <button class="header-nav__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>          
         </div>
       </div>
     </nav>
@@ -67,7 +73,7 @@
       </li>
     </ul>    
   </div>            
-  </section>    
+  </section>     
     <section class="card">
       <div class="container">
         <div class="card__inner">
@@ -425,7 +431,23 @@
       arrows: false,
       focusOnSelect: true,
       speed: 1000,
-      cssEase: 'linear'
+      cssEase: 'linear',
+      responsive: [
+        {
+          breakpoint: 426,
+          settings: {
+            vertical: false,
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 361,
+          settings: {
+            vertical: false,
+            slidesToShow: 2,
+          }
+        },
+      ]      
     });    
   </script>
 </body>

@@ -2095,13 +2095,29 @@ button {
     padding: 50px 0;
   }
   .catalog-filter {
-    display: none;
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+    z-index: 1;
+    position: absolute;
+    top: 275px;
+    -webkit-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid rgba(71, 74, 81, 0.15);
+  }
+  .catalog-filter__active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
   .catalog-content {
     max-width: 100%;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
+  }
+  .catalog-top__menu {
+    display: block;
   }
 }
 
@@ -2127,6 +2143,170 @@ button {
   }
   .catalog-content__product .home-catalog__card {
     min-height: 317px;
+  }
+  .catalog-filter {
+    top: 265px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card__inner {
+    gap: 0 20px;
+  }
+  .card-slider {
+    max-width: 100%;
+    gap: 0 15px;
+  }
+  .card-info {
+    max-width: 395px;
+  }
+  .card-like {
+    padding: 60px 0;
+  }
+  .card-like__title {
+    margin-bottom: 40px;
+  }
+  .card-like__content {
+    gap: 0 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    padding: 15px 0 60px;
+  }
+}
+
+@media (max-width: 820px) {
+  .card__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 15px;
+  }
+  .card-info {
+    max-width: 100%;
+  }
+  .card-slider {
+    max-width: 100%;
+    width: 100%;
+    -ms-grid-columns: minmax(50px, 188px) minmax(50px, 100%);
+        grid-template-columns: minmax(50px, 188px) minmax(50px, 100%);
+  }
+  .card-like__content {
+    -ms-grid-columns: (minmax(50px, 298px))[2];
+        grid-template-columns: repeat(2, minmax(50px, 298px));
+    gap: 15px 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 695px;
+    gap: 15px 0;
+  }
+  .card-slider__thumb {
+    position: absolute;
+    z-index: 1;
+    max-width: 393px;
+    height: 230px;
+  }
+  .card-slider__thumb-card + .card-slider__thumb-card {
+    margin-top: 0px;
+  }
+  .card-slider__thumb-card {
+    margin: 0 15px;
+  }
+  .card-slider__thumb-card, .card-slider__thumb-item {
+    min-height: 230px;
+  }
+  .card-slider__thumb-item img {
+    height: 230px;
+  }
+  .card-slider__big {
+    height: 455px;
+  }
+  .card-slider__big-item, .card-slider__big-card {
+    min-height: 455px;
+  }
+  .card-slider__big-card {
+    height: 455px;
+  }
+  .card-slider__big-card img {
+    height: 455px;
+  }
+  .card-like__content {
+    gap: 15px 10px;
+  }
+}
+
+@media (max-width: 390px) {
+  .card-slider__thumb {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-slider {
+    height: 670px;
+  }
+  .card-slider__thumb {
+    max-width: 345px;
+    height: 200px;
+  }
+  .card-slider__thumb-card, .card-slider__thumb-item {
+    min-height: 200px;
+  }
+  .card-slider__thumb-item {
+    height: 200px;
+  }
+  .card-like {
+    padding: 30px 0;
+  }
+  .card-like__content .home-catalog__card {
+    min-height: 462px;
+  }
+  .card-like__content .home-catalog__info {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-slider__thumb {
+    max-width: 330px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card-slider {
+    height: 565px;
+  }
+  .card-slider__big {
+    height: 350px;
+  }
+  .card-slider__big-item, .card-slider__big-card {
+    height: 350px;
+  }
+  .card-slider__big-item img, .card-slider__big-card img {
+    height: 350px;
+  }
+  .card-slider__thumb {
+    max-width: 290px;
+  }
+  .card-like__title {
+    font-size: 20px;
+    margin-bottom: 20px;
   }
 }
 
