@@ -11,26 +11,6 @@ btnFilter.addEventListener('click', () => {
   filter.classList.toggle('catalog-filter__active');
 })
 
-// $('.card-slider__big').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows: false,
-//   fade: true,
-//   asNavFor: '.card-slider__thumb'
-// });
-// $('.card-slider__thumb').slick({
-//   slidesToShow: 2,
-//   slidesToScroll: 1,
-//   asNavFor: '.card-slider__big',
-//   dots: false,
-//   centerMode: false,
-//   vertical: true,
-//   arrows: false,
-//   focusOnSelect: true,
-//   speed: 1000,
-//   cssEase: 'linear'
-// });
-
 let dropdown = document.querySelector('.dropdown');
 dropdown.onclick = function () {
   dropdown.classList.toggle('active');
@@ -51,10 +31,5 @@ const link = document.querySelector('.home-banner__view')
 link.addEventListener('click', function name(e) {
   e.preventDefault();
 })
-
-
-
-
-
 
 
